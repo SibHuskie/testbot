@@ -16,7 +16,7 @@ Client = discord.Client()
 bot_prefix= "v!"
 client = commands.Bot(command_prefix=bot_prefix)
 
-@bot.command(pass_context=True)
+@client.command(pass_context=True)
 async def messageAll(ctx):
     for server in bot.servers:
         for member in server.members:
